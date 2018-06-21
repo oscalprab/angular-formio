@@ -33,3 +33,5 @@ dist/*
 
 # demo tmp files
 .demo
+
+package-lock\.json
