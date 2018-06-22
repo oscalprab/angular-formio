@@ -1,24 +1,9 @@
 {
-  "name": "angular-formio",
-  "version": "2.0.0-rc.2",
-  "scripts": {
-    "build": "gulp build",
-    "build:watch": "gulp",
-    "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n angular-formio -d docs --hideGenerator",
-    "docs:serve": "npm run docs:build -- -s",
-    "docs:watch": "npm run docs:build -- -s -w",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "lite": "lite-server",
-    "build:demo": "webpack --mode=development",
-    "demo": "gulp build; concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
-    "publish": "gulp build; gulp package-version; npm publish dist",
-    "test": "tsc && karma start",
-    "test:watch": "karma start --auto-watch"
-  },
+  "name": "angular-formio-oscalprab",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/formio/angular-formio"
+    "url": "https://github.com/oscalprab/angular-formio"
   },
   "author": {
     "name": "Travis Tidwell",
@@ -102,7 +87,7 @@
     "zone.js": "^0.8.14"
   },
   "dependencies": {
-    "formiojs": "^3.0.0-rc.7",
+    "formiojs-oscalprab": "^1.0.1",
     "lodash": "^4.17.5",
     "ngx-bootstrap": "^2.0.3"
   }
