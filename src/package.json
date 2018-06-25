@@ -3,7 +3,7 @@
   "version": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/formio/angular-formio"
+    "url": "git+https://github.com/oscalprab/angular-formio.git"
   },
   "author": {
     "name": "Travis Tidwell",
