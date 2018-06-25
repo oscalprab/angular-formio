@@ -103,7 +103,7 @@
     "zone.js": "^0.8.14"
   },
   "dependencies": {
-    "formiojs-oscalprab": "^1.0.17",
+    "formiojs-oscalprab": "^1.0.19",
     "lodash": "^4.17.5",
     "ngx-bootstrap": "^2.0.3"
   }
