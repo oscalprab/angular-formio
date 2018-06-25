@@ -1,6 +1,21 @@
 {
   "name": "angular-formio-oscalprab",
-  "version": "1.0.1",
+  "version": "1.0.5",
+  "scripts": {
+    "build": "gulp build",
+    "build:watch": "gulp",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n angular-formio -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "lite": "lite-server",
+    "build:demo": "webpack --mode=development",
+    "demo": "gulp build; concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
+    "publish": "gulp build; gulp package-version; npm publish dist",
+    "test": "tsc && karma start",
+    "test:watch": "karma start --auto-watch"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/oscalprab/angular-formio"
@@ -36,6 +51,7 @@
     "fork-ts-checker-webpack-plugin": "^0.4.1",
     "fs-extra": "^6.0.1",
     "gulp": "^3.9.1",
+    "gulp-build": "^0.5.3",
     "gulp-clean-css": "^3.9.3",
     "gulp-rename": "^1.2.3",
     "gulp-replace": "^0.6.1",
@@ -87,7 +103,7 @@
     "zone.js": "^0.8.14"
   },
   "dependencies": {
-    "formiojs-oscalprab": "^1.0.1",
+    "formiojs-oscalprab": "^1.0.17",
     "lodash": "^4.17.5",
     "ngx-bootstrap": "^2.0.3"
   }

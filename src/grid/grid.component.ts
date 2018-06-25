@@ -9,9 +9,9 @@ import {
 import { FormioLoader } from '../components/loader/formio.loader';
 import { FormioAlerts } from '../components/alerts/formio.alerts';
 import { assign, each, get } from 'lodash';
-import { Formio } from 'formiojs';
-import FormioUtils from 'formiojs/utils';
-import Components from 'formiojs/components/Components';
+import { Formio } from 'formiojs-oscalprab';
+import FormioUtils from 'formiojs-oscalprab/utils';
+import Components from 'formiojs-oscalprab/components/Components';
 
 @Component({
   selector: 'formio-grid',

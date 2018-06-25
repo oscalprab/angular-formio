@@ -6,8 +6,8 @@ import { FormioLoader } from '../components/loader/formio.loader';
 import { FormioAppConfig } from '../formio.config';
 import { FormioRefreshValue } from '../formio.common';
 import Promise from 'native-promise-only';
-import { Formio } from 'formiojs';
-import FormioUtils from 'formiojs/utils';
+import { Formio } from 'formiojs-oscalprab';
+import FormioUtils from 'formiojs-oscalprab/utils';
 
 @Injectable()
 export class FormioResourceService {
